@@ -1,27 +1,17 @@
-# PaymentApp
+**To Install angular 11**
+1) Install node js and npm. Check version using node -v and npm -v
+2) Run npm install -g @angular/cli
+3) Create a new project ng new PaymentApp
+4) In cmd go to the folder and type code . to open the folder in vs code
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.3.
+Angular Project Files
+  1. Create a component using ng g c payment-details
+  2. Inside that create a child component ng g c payment-details/payment-detail-form
+  3. Create a shared folder and inside that we create service and model files ng g s shared/payment-detail-service and ng g class shared/payment-detail --type=model
 
-## Development server
+**Install Toastr**
+To install toastr for showing the notifications visit https://www.npmjs.com/package/ngx-toastr \
+Command to install the latest package: npm i ngx-toastr \
+Follow all the steps mentioned in setup
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This app calls .Net Core API "PaymentAPI"
