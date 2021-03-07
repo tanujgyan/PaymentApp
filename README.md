@@ -14,4 +14,12 @@ To install toastr for showing the notifications visit https://www.npmjs.com/pack
 Command to install the latest package: npm i ngx-toastr \
 Follow all the steps mentioned in setup
 
-This app calls .Net Core API "PaymentAPI"
+This app calls .Net Core API "PaymentAPI" \
+
+**Steps to create this app**
+1. Create a new project using ng new command
+2. Create a component that will contain the table of all the records. Check your app.module.ts to make sure the import statements are added correctly for new component
+3. In the html file of the new component add all the controls you want to add.
+4. Create a service using ng g s command. Inject httpclient to the service constructor. Import HttpClientModule in app module ts file
+5. Create a model for storing data. This model should match your model from the .Net core API
+6. 
