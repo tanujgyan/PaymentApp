@@ -21,5 +21,7 @@ This app calls .Net Core API "PaymentAPI" \
 2. Create a component that will contain the table of all the records. Check your app.module.ts to make sure the import statements are added correctly for new component
 3. In the html file of the new component add all the controls you want to add.
 4. Create a service using ng g s command. Inject httpclient to the service constructor. Import HttpClientModule in app module ts file
-5. Create a model for storing data. This model should match your model from the .Net core API
-6. 
+5. Create a model for storing data. This model should match your model from the .Net core API model
+6. In your template file we are using template-driven forms. Create [(ngModel)] for two-way data binding. We are binding the ngModel to service variable of type model so that the data sharing can happen directly.
+7. In the form tag we will define a (submit) method. The method will be used in component file to call the post method in service.
+8. Make sure to write .subscribe after calling post method in service otherwise it will not call the .net core api
